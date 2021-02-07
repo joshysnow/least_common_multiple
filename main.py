@@ -18,9 +18,15 @@ def lcm_df_r(x, y, i=1):
         return lcm_df_r(x, y, i + 1)
 
 def lcm_df(x, y):
+    """
+    Depth First traversal. Recursive.
+    """
     return lcm_df_r(x, y)
 
 def lcm_bf(x, y):
+    """
+    Breadth first traversal.
+    """
     found = False
     current_x = x
 
